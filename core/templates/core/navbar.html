@@ -1,0 +1,33 @@
+{% load static %}
+
+<header>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="{% url "index" %}">
+                <img src="{% static 'core/hues_logo_white.png' %}" alt="" width="20%">
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <li>
+                <a href="{% url "index" %}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="{% url "commands" %}">
+                    Commands
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.gg/6DX6td8qGh">
+                    Support Server
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.com/oauth2/authorize?client_id=1292974548957921401&permissions=268435456&integration_type=0&scope=bot">
+                    <button class="button">Add Hues to Your Server</button>
+                </a>
+            </li>
+    </nav>    
+    </div>    
+</header>

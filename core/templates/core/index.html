@@ -1,0 +1,70 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="hero-area">
+    <div class="hero-area__content">
+        <div class="hero_area__custom-role-1 bold-text">
+            papaya♡
+            <img src="{% static "core/papaya_role_icon.png" %}" alt="">
+        </div>
+        <div class="hero_area__custom-role-2 bold-text">
+            spotty
+            <img src="{% static "core/spotty_role_icon.png" %}" alt="">
+        </div>
+        <div class="hero_area__custom-role-3 bold-text">
+            zoohru
+            <img src="{% static "core/zoohru_role_icon.png" %}" alt="">
+        </div>
+
+        <div class="hero_area__flex">
+            <h1 class="hero-area__tagline">Customize your roles.</h1>
+            <p class="hero-area__tagline-description">No nonsense role customization bot. Lets your users change their role colors, role names, and role icons with just one single slash command (/). Putting powerful role customization features in the hands of your users.</p>
+            <div class="hero_area__cta-btns">
+                <a href="https://discord.com/oauth2/authorize?client_id=1292974548957921401&permissions=268435456&integration_type=0&scope=bot">
+                    <button class="button">Add Hues</button>
+                </a>
+                <button class="secondary-button">Commands</button>
+            </div>    
+        </div>
+    </div>
+</div>
+
+<section>
+    <center>
+        <h1 class="section-header">Everything you need in one command.</h1>
+        <div class="section-tagline">Change the color of the role, icon, and text in a single slash command.</div>
+        <div class="slash-command">
+            <div class="bold-text align-left">OPTIONS</div>
+            <div class="flex">
+                <span>new_role_name</span>
+                <span class="align-right">The new desired name for the role.</span>    
+            </div>
+
+            <div class="flex">
+                <span>new_role_color</span>
+                <span class="align-right">The new color for the role, accepts hex codes <i>without</i> the hashtag (#).</span>    
+            </div>
+
+            <div class="flex">
+                <span>new_role_icon</span>
+                <span class="align-right">A new image to go along with the role.</span>    
+            </div>
+        </div>
+
+        <div class="slash-command-part">
+            <span class="bold-text">/editcustomrole</span>
+            <span>Edits an existing user’s custom role.</span>
+        </div>
+
+        <div class="slash-command-part-2">
+            <img src="{% static 'core/hues_logo_white.png' %}" alt="" width="32px" height="16px">
+            <span class="bold-text">/editcustomrole</span>
+            <span>+3 Options</span>
+        </div>
+
+
+    </center>
+</section>
+{% endblock content %}

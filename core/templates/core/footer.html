@@ -1,0 +1,44 @@
+{% load static %}
+
+<footer>
+    <div class="footer">
+        <div class="footer__col">
+            <img src="{% static 'core/hues_logo_white.png' %}" alt="" width="90px" style="padding-top: 24px;">
+            <p class="footer__paragraph">
+                We are dedicated to delivering a seamless and stress-free user experience (UX) through our bot. 
+                Our goal is to provide clear, user-friendly error messages that are easy to understand, 
+                ensuring a hassle-free interaction.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4>NAVIGATION</h4>
+            <li><a href="{% url "index" %}">Home</a></li>        
+            <li><a href="{% url "commands" %}">Commands</a></li>
+            <li><a href="https://discord.gg/6DX6td8qGh">Support Server</a></li>
+        </div>
+
+        <div class="footer__col">
+            <h4>LEGAL</h4>
+            <li>Cookies</li>
+            <li><a href="{% url "privacy" %}">Privacy Policy</a></li>
+            <li><a href="{% url "terms" %}">Terms of Service</a></li>
+        </div>
+
+        <div class="footer__col">
+            <h4>REACH US</h4>
+            <li>Bluesky</li>
+            {% comment %} <li>Volunteer</li> {% endcomment %}
+            <li><a href="{% url "privacy" %}">Contact Us</a></li>
+        </div>
+
+        <div class="footer__col">
+            <h4>VOTE</h4>
+            <li><a href="https://top.gg/bot/1292974548957921401">top.gg</a></li>
+            <li><a href="https://discordbotlist.com/bots/hues">Discord Bot List</a></li>
+            {% comment %} <li><a href="{% url "privacy" %}">Contact Us</a></li> {% endcomment %}
+        </div>
+
+    </div>
+    <div class="footer__tagline">© 2024 Hues USA, Inc. All rights reserved.</div>
+</footer>

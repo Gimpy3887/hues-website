@@ -1,0 +1,54 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="privacy-policy">
+    <h1>Terms of Service</h1>
+
+    <p>Effective: January 1, 2025</p>
+    <p>Last Updated: January 2, 2025</p>
+
+    <h2>Introduction</h2>
+    <p>
+        By inviting and using our bot, you automatically agree to our Terms of Service (TOS). Accepting Hue's TOS
+        means accepting <a href="https://discord.com/terms">Discord's TOS</a> and meeting all the requirements outlined in Discord's TOS. Furthermore, you 
+        confirm to have read and agreed to our Privacy Policy.
+    </p>
+
+    <h2>Acceptable Use Policy (AUP)</h2>
+    <p>
+        You may not use the bot for any of the following reasons: (1) illegal, harmful, or malicious activities, (2) exploiting
+        or attempting to disrupt the functionality of the bot, and (3) reverse-engineering the bot. 
+    </p>
+
+    <h2>Data Usage</h2>
+    <p>
+        Hues collects and processes data as outlined in our <a href="{% url "privacy" %}">Privacy Policy</a>.
+    </p>
+
+    <h2>Limitation of Liability</h2>
+    <p>
+        The bot is provided "as is" without any warranty of any kind; we are not liable if there are any service
+        interruptions or a serious loss of data. We do not take responsibility for any damages resulting from the ability
+        or inability to use Hues.
+    </p>
+
+    <h2>Termination</h2>
+    <p>
+        We reserve the right to terminate or restrict to access to the bot for any reasons especially when
+        there's a violation of our TOS or the abuse of the bot's services.
+    </p>
+
+    <h2>Changes to These Terms</h2>
+    <p>
+        We may update these terms at any time, users will be notified of changes through the relevant channels. Continued use of the bot implies acceptance of the updated terms.
+    </p>
+
+    <h2>Questions</h2>
+    <p>
+        If you have an inquiries related to our TOS, you can contact us on our <a href="https://discord.gg/6DX6td8qGh">Discord support server</a>.
+    </p>
+
+</div>
+{% endblock content %}

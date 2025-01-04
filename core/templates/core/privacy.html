@@ -1,0 +1,55 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="privacy-policy">
+    <h1>Privacy Policy</h1>
+    
+    <p>Effective: January 1, 2025</p>
+    <p>Last Updated: January 2, 2025</p>
+
+    <h2>Introduction</h2>
+    <p>
+        The policy detailed here discusses how Hues handles your user data and protects your privacy.
+        Hues is a role customization bot that allows users to change different aspects of their roles
+        i.e. name, color, and icon.
+    </p>
+
+    <h2>Data Collection and Usage</h2>
+    <p>
+        As of writing this policy, Hues currently collects the following information from your server: (1) Server ID, (2) Role ID, and (3) User ID.
+        Each type of indentification number allows Hues to pinpoint accurately which role belongs to whom which is an essential functionality for 
+        allowing the bot to reassign the exact custom role when a user leaves the server, allowing the bot to list all the roles connected to each 
+        user via /listcustomroles, and allowing users to edit their specific role such as /editcustomrole. Its used to make a link between the user 
+        and their custom role. Hues uses Google Analytics to keep track of user visits on the website.
+    </p>
+
+    <h2>Storage of Data</h2>
+    <p>
+        The data is stored away in a private database where only the bot developer and his team have access. If the data were breached or used maliciously,
+        all parties will be notified: we assume no liability if this were to happen. The data is not sold: its also not given to third-party services
+        except for Google Analytics. In cases where it is required by law or a Terms of Service (TOS) agreement: the data is handed over to the proper authorities. 
+    </p>
+
+    <h2>Data Access and Retention</h2>
+    <p>
+        The only parties allowed to access the data are the bot developer and the bot developer's team. The data is kept indefinitely in our database;
+        however, staff members are allowed to individually remove the roles using the /disconnectarole command which is a bipartite command that
+        removes the user's data from our database and unassigns the role from their profile.
+    </p>
+
+    <h2>User Rights</h2>
+    <p>
+        At any point in time, you have the right to make a request to view the data concerning your Discord account.
+        You may submit a request through the <a href="https://discord.gg/6DX6td8qGh">Discord Server</a>: If you would like to request the removal of the data,
+        you should first contact staff members of the server you are a member of since they have the ability to remove your data using the /disconnectarole command.
+    </p>
+
+    <h2>Questions</h2>
+    <p>
+        We are available to answer your privacy related inquiries on our <a href="https://discord.gg/6DX6td8qGh">Discord support server</a>.
+    </p>
+
+</div>
+{% endblock content %}
